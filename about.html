@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <img src="caminho/para/sua/imagem.jpg" alt="Imagem" />
+    <p>Este site foi criado para educar e informar sobre hacking ético e segurança cibernética.</p>
+    <p>Nomes dos criadores: ViruzinPriv e Dkzin</p>
+    <p>Clique em <a href="secreto.html" id="viruzin">Viruzin</a> para acessar algo secreto!</p>
+    <script>
+        document.getElementById('viruzin').addEventListener('click', function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+            // Adicione a animação ou transição desejada aqui
+            setTimeout(function() {
+                window.location.href = 'secreto.html'; // Redireciona para a página secreta
+            }, 1000); // Tempo de espera em milissegundos (1 segundo no exemplo)
+        });
+    </script>
+</body>
+</html>
